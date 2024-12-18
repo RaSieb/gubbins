@@ -393,7 +393,7 @@ def iterate_over_base_patterns(column,
     Cmat_null = numpy.array([0,1,2,3], dtype = numpy.uint8)
         
     # Reset matrices
-    Lmat.fill(numpy.NINF)
+    Lmat.fill(-numpy.inf)
     Cmat[:] = Cmat_null
 
     # Count unknown bases
